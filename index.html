@@ -1,105 +1,115 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার ওয়েবসাইট</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b172a">
+  <meta name="description" content="আধুনিক, সুন্দর ও ব্যবহারবান্ধব ওয়েবসাইট ডিজাইন ও ডেভেলপমেন্ট সেবা।">
+  <title>আমার সাইট | ওয়েব ডিজাইন ও ডেভেলপমেন্ট</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">আমার<span>সাইট</span></a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">হোম</a></li>
-                <li><a href="#about">পরিচিতি</a></li>
-                <li><a href="#services">সেবা</a></li>
-                <li><a href="#contact">যোগাযোগ</a></li>
-            </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="প্রধান নেভিগেশন">
+      <a class="logo" href="#home" aria-label="আমার সাইট - হোম"><span class="logo-mark">A</span><span>আমার<span class="logo-accent">সাইট</span></span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">পরিচিতি</a></li>
+        <li><a href="#services">সেবাসমূহ</a></li>
+        <li><a href="#process">কাজের ধাপ</a></li>
+        <li><a class="nav-cta" href="#contact">যোগাযোগ <span aria-hidden="true">↗</span></a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
+  <main>
     <section class="hero" id="home">
-        <div class="container hero-content">
-            <h1>স্বাগতম আমার <span>ওয়েবসাইটে</span></h1>
-            <p>আমি একজন ওয়েব ডেভেলপার। সুন্দর ও আধুনিক ওয়েবসাইট তৈরি করি।</p>
-            <a href="#contact" class="btn">যোগাযোগ করুন</a>
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> সৃজনশীল ডিজিটাল অভিজ্ঞতা</span>
+          <h1>আপনার ভাবনাকে<br><span>ওয়েবে রূপ দিই।</span></h1>
+          <p class="hero-description">আধুনিক ডিজাইন, পরিচ্ছন্ন কোড এবং ব্যবহারবান্ধব অভিজ্ঞতার সমন্বয়ে তৈরি করি সুন্দর ও কার্যকর ওয়েবসাইট।</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">কাজ শুরু করুন <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-quiet" href="#services">সেবাসমূহ দেখুন <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="note-line"></span> প্রতিটি স্ক্রিনে সুন্দর, প্রতিটি ক্লিকে সহজ</div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">আমার <span>পরিচিতি</span></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>আমি HTML, CSS, JavaScript এবং বিভিন্ন ফ্রেমওয়ার্কে দক্ষ। আমি ব্যবহারকারী-বান্ধব এবং রেসপন্সিভ ওয়েবসাইট তৈরি করি।</p>
-                    <p>আমার লক্ষ্য হলো ক্লায়েন্টদের সেরা ডিজিটাল অভিজ্ঞতা প্রদান করা।</p>
-                    <a href="#" class="btn">আরও জানুন</a>
-                </div>
-                <div class="about-image">
-                    <div class="image-box">👨‍💻</div>
-                </div>
+        <div class="hero-art" aria-label="ওয়েব ডিজাইনের ইলাস্ট্রেশন">
+          <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+          <div class="browser-card">
+            <div class="browser-top"><div class="browser-dots"><i></i><i></i><i></i></div><span>yourwebsite.com</span><b>•••</b></div>
+            <div class="browser-content">
+              <div class="mock-nav"><span class="mock-brand"></span><span></span><span></span><span></span><i></i></div>
+              <div class="mock-hero"><div class="mock-label"></div><div class="mock-title"></div><div class="mock-title short"></div><div class="mock-text"></div><div class="mock-button"></div></div>
+              <div class="mock-cards"><i></i><i></i><i></i></div>
             </div>
+          </div>
+          <div class="float-chip chip-code"><span>{ }</span><div><b>Clean code</b><small>পরিচ্ছন্ন কোড</small></div></div>
+          <div class="float-chip chip-responsive"><span>▣</span><div><b>Responsive</b><small>সব ডিভাইসে মানানসই</small></div></div>
+          <div class="art-spark">✦</div>
         </div>
+      </div>
+      <div class="hero-bottom container"><span>DESIGN</span><i></i><span>DEVELOPMENT</span><i></i><span>EXPERIENCE</span><span class="scroll-hint">নিচে দেখুন ↓</span></div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">আমার <span>সেবা</span></h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon">🎨</div>
-                    <h3>ওয়েব ডিজাইন</h3>
-                    <p>সুন্দর ও আধুনিক ডিজাইন তৈরি করি।</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">💻</div>
-                    <h3>ওয়েব ডেভেলপমেন্ট</h3>
-                    <p>দক্ষতার সাথে ওয়েবসাইট তৈরি করি।</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">📱</div>
-                    <h3>রেসপন্সিভ ডিজাইন</h3>
-                    <p>মোবাইল ও ডেস্কটপে পারফেক্ট।</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">🚀</div>
-                    <h3>SEO অপটিমাইজেশন</h3>
-                    <p>সার্চ ইঞ্জিনে ভালো র‍্যাংকিং।</p>
-                </div>
-            </div>
-        </div>
+    <section class="intro section-pad" id="about">
+      <div class="container intro-grid">
+        <div><span class="section-kicker">আমার পরিচিতি</span><h2 class="section-heading">ডিজাইন শুধু সুন্দর হলেই নয়,<br><span>ব্যবহারেও হতে হবে সহজ।</span></h2></div>
+        <div class="intro-copy"><p>আমি HTML, CSS ও JavaScript ব্যবহার করে দ্রুত, রেসপন্সিভ এবং ব্যবহারবান্ধব ওয়েবসাইট তৈরি করি। প্রতিটি কাজের লক্ষ্য থাকে—পরিষ্কার উপস্থাপনা, সহজ নেভিগেশন এবং সব ডিভাইসে স্বচ্ছন্দ অভিজ্ঞতা।</p><a class="text-link" href="#contact">আপনার প্রজেক্ট নিয়ে কথা বলুন <span>↗</span></a></div>
+      </div>
+      <div class="container value-strip">
+        <div class="value-item"><span class="value-icon">✳</span><div><b>আধুনিক ডিজাইন</b><small>পরিপাটি ও আকর্ষণীয় লেআউট</small></div></div>
+        <div class="value-item"><span class="value-icon">⌘</span><div><b>পরিচ্ছন্ন কোড</b><small>সহজে রক্ষণাবেক্ষণযোগ্য</small></div></div>
+        <div class="value-item"><span class="value-icon">▣</span><div><b>রেসপন্সিভ অভিজ্ঞতা</b><small>মোবাইল, ট্যাব ও ডেস্কটপ</small></div></div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">যোগাযোগ <span>করুন</span></h2>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="আপনার নাম" required>
-                <input type="email" placeholder="আপনার ইমেইল" required>
-                <textarea placeholder="আপনার বার্তা" rows="5" required></textarea>
-                <button type="submit" class="btn">বার্তা পাঠান</button>
-            </form>
+    <section class="services section-pad" id="services">
+      <div class="container">
+        <div class="section-top"><div><span class="section-kicker">যা করতে পারি</span><h2 class="section-heading">আপনার প্রয়োজনের <span>ডিজিটাল সেবা</span></h2></div><p>পরিকল্পনা থেকে প্রকাশ—আপনার ওয়েব উপস্থিতিকে আরও সুন্দর ও কার্যকর করতে প্রয়োজনীয় সেবা।</p></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon icon-teal">✦</div><span class="card-number">01</span><h3>ওয়েব ডিজাইন</h3><p>ব্র্যান্ডের পরিচয়ের সঙ্গে মানানসই আধুনিক, পরিচ্ছন্ন ও আকর্ষণীয় ডিজাইন।</p><a href="#contact" aria-label="ওয়েব ডিজাইন সম্পর্কে যোগাযোগ">↗</a></article>
+          <article class="service-card"><div class="service-icon icon-blue">⌘</div><span class="card-number">02</span><h3>ওয়েব ডেভেলপমেন্ট</h3><p>দ্রুতগতির, নির্ভরযোগ্য এবং সহজে ব্যবহারযোগ্য ওয়েবসাইট তৈরি।</p><a href="#contact" aria-label="ওয়েব ডেভেলপমেন্ট সম্পর্কে যোগাযোগ">↗</a></article>
+          <article class="service-card"><div class="service-icon icon-violet">▣</div><span class="card-number">03</span><h3>রেসপন্সিভ ডিজাইন</h3><p>মোবাইল, ট্যাবলেট ও কম্পিউটারে সমান সুন্দর দেখায় এমন লেআউট।</p><a href="#contact" aria-label="রেসপন্সিভ ডিজাইন সম্পর্কে যোগাযোগ">↗</a></article>
+          <article class="service-card"><div class="service-icon icon-amber">⌕</div><span class="card-number">04</span><h3>SEO ও অপটিমাইজেশন</h3><p>সার্চ ইঞ্জিন ও পারফরম্যান্সের জন্য প্রয়োজনীয় বেসিক অপটিমাইজেশন।</p><a href="#contact" aria-label="SEO সম্পর্কে যোগাযোগ">↗</a></article>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© ২০২৫ আমার সাইট। সর্বস্বত্ব সংরক্ষিত।</p>
+    <section class="process section-pad" id="process">
+      <div class="container process-layout">
+        <div><span class="section-kicker">কাজের পদ্ধতি</span><h2 class="section-heading">ভাবনা থেকে<br><span>বাস্তব ওয়েবসাইট।</span></h2><p class="process-lead">প্রতিটি ধাপে স্বচ্ছতা, যত্ন এবং মান বজায় রেখে কাজ এগিয়ে নেওয়া হয়।</p></div>
+        <div class="steps">
+          <div class="step"><span>01</span><div><h3>আলোচনা ও পরিকল্পনা</h3><p>আপনার প্রয়োজন, লক্ষ্য ও পছন্দ বুঝে কাজের পরিকল্পনা তৈরি।</p></div></div>
+          <div class="step"><span>02</span><div><h3>ডিজাইন ও নির্মাণ</h3><p>পরিকল্পনা অনুযায়ী ডিজাইন এবং প্রয়োজনীয় ফিচার তৈরি।</p></div></div>
+          <div class="step"><span>03</span><div><h3>পরীক্ষা ও প্রকাশ</h3><p>বিভিন্ন ডিভাইসে পরীক্ষা করে ওয়েবসাইট প্রকাশের প্রস্তুতি।</p></div></div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="contact section-pad" id="contact">
+      <div class="container contact-panel">
+        <div class="contact-copy"><span class="section-kicker">যোগাযোগ</span><h2>আপনার পরবর্তী<br><span>প্রজেক্টটি শুরু হোক।</span></h2><p>নতুন কোনো ওয়েবসাইট বা ডিজিটাল কাজের পরিকল্পনা আছে? আপনার ধারণাটি জানান।</p><div class="contact-decoration">✳</div></div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">আপনার নাম</label><input id="name" name="name" type="text" placeholder="নাম লিখুন" autocomplete="name" required>
+          <label for="email">ইমেইল ঠিকানা</label><input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+          <label for="message">আপনার বার্তা</label><textarea id="message" name="message" rows="4" placeholder="আপনার কাজ সম্পর্কে সংক্ষেপে লিখুন..." required></textarea>
+          <button class="btn btn-primary submit-btn" type="submit">বার্তা প্রস্তুত করুন <span>↗</span></button>
+          <p class="form-note" id="formNote" role="status">বার্তা পাঠাতে আপনার ইমেইল অ্যাপ ব্যবহার হবে।</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="logo footer-logo" href="#home"><span class="logo-mark">A</span><span>আমার<span class="logo-accent">সাইট</span></span></a><p>সুন্দর ডিজাইন। সহজ অভিজ্ঞতা।</p><span>© <span id="year"></span> আমার সাইট। সর্বস্বত্ব সংরক্ষিত।</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
